@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <h1 class="calc__title">Калькулятор стоимости доставки</h1>
+    <form class="calc__form" id="form" action="#" method="post">
+        <label >
+            <span>Название товара:</span>
+            <input type="text" id="name" required title="Заполните это поле">
+        </label>
+        <label >
+            <span>Вес товара (кг):</span>
+            <input type="number" id="weight" placeholder="Число" required title="Заполните это поле">
+        </label>
+        <label >
+            <span>Расстояние доставки (км):</span>
+            <input type="number" id="distance" placeholder="Число" required title="Заполните это поле">
+        </label>
+        <button class="calc__btn" id="button">Добавить товар</button>
+    </form>
+    <p class="visually-hidden error" id="name-error">Пожалуйста, введите положительное значение для веса и расстояния</p>
+    <table class="product-table" id="table">
+        <thead>
+            <tr>
+                <th>Название товара</th>
+                <th>Вес (кг)</th>
+                <th>Расстояние (км)</th>
+                <th>Стоимость доставки</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- Здесь будут добавляться товары -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+  .error {
+    color: #ff0606;
+    font-weight: 500;
+  }
+
+.calc__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 40px;
+}
+
+.calc__btn {
+    width: 200px;
+    padding: 10px;
+}
